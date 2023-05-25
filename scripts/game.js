@@ -40,7 +40,7 @@ function generateMovies() {
     for (let i = 0; i < moviesCount; i++) {
         let movie = new Movie(
             faker.commerce.productName(),
-            faker.company.catchPhrase(),
+            faker.commerce.productName(),
             Math.floor(random.nextRange(0, 100000000)),
             Math.floor(random.nextRange(3, 10)),
             i
@@ -96,6 +96,7 @@ function endGame() {
     clearInterval(timerInterval);
     movieContainer.style.display = 'none'
     startButton.style.visibility = 'visible'
+    startButton.textContent = 'Restart game'
     movies = []
 }
 
