@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Scrollzy: Movie Selection Game</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Scrollzy: Selection Game</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-  <nav>
+<nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Scrollzy</a>
+        <a href="#" class="brand-logo center">Scrollzy 📜</a>
     </div>
-  </nav>
-  <div class="container">
+</nav>
+<div class="container">
     <div class="row">
-      <div class="col s12">
-        <h4 id="timer" class="center-align">Your time will be displayed here</h4>
-        <div id="movies"></div>
-        <div id="end-message" class="center-align"></div>
-      </div>
+        <div class="col s12">
+            <h4 id="timer" class="center-align">Select only the items with rating &nbsp;7️⃣&nbsp; or higher</h4>
+            <div id="movies"></div>
+            <div id="message" class="center-align">Press start game to begin</div>
+        </div>
     </div>
     <div class="row">
-      <div class="col s12 center-align">
-        <button id="start-btn" class="btn waves-effect waves-light" onclick="startGame()">Start Game</button>
-      </div>
+        <div class="col s12 center-align">
+            <button id="start-btn" class="btn waves-effect waves-light" onclick="startGame()">Start Game</button>
+        </div>
     </div>
-  </div>
+</div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="script.js"></script>
+<script type="text/javascript" src="scripts/game.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
 </body>
 </html>
