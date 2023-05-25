@@ -55,11 +55,11 @@ function generateMoviesHtml() {
     for (let i = 0; i < movies.length; i++) {
         let movie = movies[i]
         movieList += `<div class="movie">
-                        <h5>${movie.name}</h5>
+                        <h3>${movie.name}</h3>
                         <p>${movie.description}</p>
                         <p>Watched: ${movie.watchers}</p>
                         <p>Rating: ${movie.rating}</p>
-                        <button class="btn waves-effect waves-light" onclick="selectMovie(${i})">Select</button>
+                        <button class="btn-large waves-effect waves-light" onclick="selectMovie(${i})">Select</button>
                     </div>`;
     }
 
